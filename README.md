@@ -42,6 +42,7 @@ To set up the project environment, follow these steps:
 git clone https://github.com/yourusername/super-resolution.git
 cd super-resolution
 pip install -r requirements.txt
+'''
 
 🚀 Usage
 To start using the Super Resolution models and explore the implemented techniques, navigate to the notebooks/ directory after installation:
@@ -49,6 +50,7 @@ To start using the Super Resolution models and explore the implemented technique
 ```bash
 cd notebooks
 jupyter notebook
+'''
 
 
 Here, you can open the Jupyter notebooks provided to see the models in action and experiment with different settings.
