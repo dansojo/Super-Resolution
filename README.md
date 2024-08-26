@@ -47,20 +47,20 @@ Learning-based methods, particularly those involving deep learning, train models
 
 Both interpolation-based and learning-based methods have their uses, with the choice depending on specific requirements like the need for speed versus the need for high image quality.
 
-## Evaluation Metrics:
+## ✨Evaluation Metrics:
 Super Resolution models are evaluated based on their ability to recreate high-resolution images that are true to the original high-resolution images. The following metrics are commonly used to assess the quality and effectiveness of Super Resolution techniques:
 
-#### PSNR (Peak Signal-to-Noise Ratio):
+### PSNR (Peak Signal-to-Noise Ratio):
 - **Definition:** PSNR is a standard metric used to measure the quality of reconstruction of lossy compression codecs such as video and image compression algorithms. It is defined as the ratio between the maximum possible power of a signal and the power of corrupting noise that affects the fidelity of its representation.
 - **Calculation:** PSNR is calculated using the logarithmic decibel scale of the ratio of the maximum possible pixel value of the image to the mean squared error (MSE) between the original and the reconstructed image.
 - **Interpretation:** Higher PSNR values indicate better image quality. Typically, a higher PSNR means that the reconstruction is of higher quality. It is widely used because it is simple to calculate and has clear physical meanings.
 
-#### SSIM (Structural Similarity Index):
+### SSIM (Structural Similarity Index):
 - **Definition:** The Structural Similarity Index (SSIM) is used for measuring the similarity between two images. The SSIM index is a full reference metric; in other words, the measurement or prediction of image quality is based on an initial uncompressed or distortion-free image as reference.
 - **Calculation:** SSIM considers changes in structural information, perceived light, and contrasts rather than pixel-by-pixel differences. It incorporates important perceptual phenomena, including both luminance masking and contrast masking terms.
 - **Interpretation:** SSIM values range from -1 to 1, where 1 indicates perfect similarity. It is more aligned with human visual perception than PSNR as it takes texture and contrast into account.
 
-#### LPIPS (Learned Perceptual Image Patch Similarity):
+### LPIPS (Learned Perceptual Image Patch Similarity):
 - **Definition:** LPIPS is a more recent metric that uses deep learning to measure the perceptual similarity between images. Unlike PSNR and SSIM, LPIPS has been trained to align more closely with human judgment, making it better at predicting perceptual similarities and differences.
 - **Calculation:** It calculates similarities using features extracted by deep neural networks, comparing the distance between feature representations of reference and target images.
 - **Interpretation:** Lower LPIPS scores indicate greater perceptual similarity between the compared images, suggesting that the reconstructed image is perceptually closer to the original.
