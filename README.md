@@ -22,10 +22,29 @@ Super Resolution (SR) refers to the process of improving the resolution of an im
 Super Resolution techniques can be broadly categorized into two types: interpolation-based methods and learning-based methods.
 
 ### Interpolation-Based Methods:
-These methods use mathematical formulas to estimate new pixel values based on the values of surrounding pixels. Common examples include nearest neighbor, bilinear, and bicubic interpolation.
+Interpolation-based methods use mathematical formulas to interpolate or estimate pixel values in low-resolution images to produce high-resolution versions. These methods are simple and computationally efficient but generally produce less accurate results compared to learning-based methods.
+
+#### Key Features:
+- **Speed and Efficiency:** These methods are computationally less demanding, making them suitable for real-time applications where speed is crucial.
+- **Simplicity:** The algorithms are straightforward, involving direct pixel value calculations based on nearby pixels.
+- **Common Techniques:**
+  - **Nearest Neighbor:** Simplest form where the nearest pixel's value is assigned to each new pixel.
+  - **Bilinear Interpolation:** Calculates the output pixel value using a weighted average of the four nearest pixels.
+  - **Bicubic Interpolation:** Uses 16 nearest pixels to estimate the new pixel, providing smoother results than bilinear.
 
 ### Learning-Based Methods:
-These involve training deep neural networks, typically using convolutional neural networks (CNNs) or generative adversarial networks (GANs), to learn the transformation from LR to HR images. These models are trained using pairs of LR and HR images and can generate more accurate and realistic images compared to interpolation methods.
+Learning-based methods, particularly those involving deep learning, train models on a dataset of low-resolution and high-resolution image pairs to learn how to upscale images. These models can more accurately predict high-resolution details that were not originally present in the low-resolution images.
+
+#### Key Features:
+- **Model Complexity:** Utilize complex models like Convolutional Neural Networks (CNNs) and Generative Adversarial Networks (GANs) to learn detailed image features.
+- **Training Requirements:** Require large datasets of image pairs and significant computational resources for training.
+- **High Accuracy:** Capable of producing more detailed and visually appealing images by learning from data.
+- **Common Techniques:**
+  - **SRCNN (Super-Resolution Convolutional Neural Network):** One of the first deep learning models applied to super resolution.
+  - **ESRGAN (Enhanced Super-Resolution Generative Adversarial Network):** Provides state-of-the-art results by using adversarial training.
+  - **FSRCNN (Fast Super-Resolution Convolutional Neural Network):** Designed for real-time super resolution tasks.
+
+Both interpolation-based and learning-based methods have their uses, with the choice depending on specific requirements like the need for speed versus the need for high image quality.
 
 ### Evaluation Metrics:
 - **PSNR (Peak Signal-to-Noise Ratio)**
