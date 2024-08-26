@@ -1,7 +1,7 @@
-Super Resolution Project
+# Super Resolution Project
 Welcome to the Super Resolution project repository. This repository serves as a comprehensive guide and practical toolkit for understanding and implementing Super Resolution (SR) techniques using deep learning. The project includes detailed discussions, code implementations, and evaluation of different Super Resolution models.
 
-Table of Contents
+## Table of Contents
 Project Overview
 What is Super Resolution?
 Technical Background
@@ -9,7 +9,8 @@ Installation
 Usage
 Contributing
 License
-Project Overview
+
+## Project Overview
 This project aims to explore the capabilities of Super Resolution through deep learning by enhancing the quality of images from low to high resolution. It includes a practical implementation of various state-of-the-art Super Resolution models, alongside in-depth documentation and examples to facilitate understanding and innovation in image processing techniques.
 
 What is Super Resolution?
