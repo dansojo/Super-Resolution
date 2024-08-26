@@ -11,17 +11,17 @@ Welcome to the **Super Resolution project repository**. This repository is desig
 - [Contributing](#contributing)
 - [License](#license)
 
-## Project Overview
+## 🌟 Project Overview
 This project aims to explore the capabilities of Super Resolution through deep learning by enhancing the quality of images from low to high resolution. It includes practical implementations of various state-of-the-art Super Resolution models, alongside in-depth documentation and examples to facilitate understanding and innovation in image processing techniques.
 
-## What is Super Resolution?
+## ❓ What is Super Resolution?
 Super Resolution (SR) refers to the process of improving the resolution of an image from a lower resolution to a higher resolution. The core idea is to reconstruct the high-resolution details from a low-resolution image using advanced machine learning algorithms.
 
 ### Key Concepts:
 - **HR (High Resolution):** The detailed, high-quality version of an image.
 - **LR (Low Resolution):** The degraded, lower-quality version of an image, typically with fewer pixels and less detail.
 
-## Technical Background
+## 🛠️ Technical Background
 Super Resolution techniques can be broadly categorized into two types: interpolation-based methods and learning-based methods.
 
 ### Interpolation-Based Methods:
@@ -35,10 +35,20 @@ These involve training deep neural networks, typically using convolutional neura
 - **SSIM (Structural Similarity Index)**
 - **LPIPS (Learned Perceptual Image Patch Similarity)**
 
-## Installation
+## ⚙️ Installation
 To set up the project environment, follow these steps:
 
 ```bash
 git clone https://github.com/yourusername/super-resolution.git
 cd super-resolution
 pip install -r requirements.txt
+
+🚀 Usage
+To start using the Super Resolution models and explore the implemented techniques, navigate to the notebooks/ directory after installation:
+
+```bash
+cd notebooks
+jupyter notebook
+
+
+Here, you can open the Jupyter notebooks provided to see the models in action and experiment with different settings.
