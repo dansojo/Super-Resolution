@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=모양&color=색상코드&height=높이&section=header&text=텍스트&fontSize=텍스트크기" />
+
 # Super Resolution Project
 Welcome to the Super Resolution project repository. This repository serves as a comprehensive guide and practical toolkit for understanding and implementing Super Resolution (SR) techniques using deep learning. The project includes detailed discussions, code implementations, and evaluation of different Super Resolution models.
 
