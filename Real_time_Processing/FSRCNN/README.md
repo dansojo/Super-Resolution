@@ -1,4 +1,7 @@
 # Fast Super-Resolution Convolutional Neural Network (FSRCNN) Overview
+- **Accelerating the Super-Resolution Convolutional Neural Network** by Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang. This paper introduces the FSRCNN model, which enhances the speed and performance of super-resolution convolutional neural networks. The model is particularly noted for its efficiency and ability to perform real-time upscaling of low-resolution images.
+  - [Read the full paper here](https://arxiv.org/pdf/1608.00367)
+
 ## Introduction
 The Fast Super-Resolution Convolutional Neural Network (FSRCNN) is designed to enhance the resolution of images in real-time. It improves upon traditional super-resolution techniques by providing a faster and more efficient method to upscale low-resolution images while maintaining high quality.
 
@@ -20,8 +23,6 @@ FSRCNN features an innovative architecture with several key layers designed to o
 4. **Expanding Layer**: Reverses the shrinking process to prepare features for the final reconstruction.
 5. **Deconvolution Layer**: Also known as the upscaling layer, it reconstructs the high-resolution output from the processed features
 
-## ❓ What is Super Resolution?
-Super Resolution (SR) refers to the process of improving the resolution of an image from a lower resolution to a higher resolution. The core idea is to reconstruct the high-resolution details from a low-resolution image using advanced machine learning algorithms.
 
 ## 🛠️ Evolution and Performance Improvements in FSRCNN
 ![FSRCNN_성능 비교](https://github.com/user-attachments/assets/338e8915-78df-4df3-8e97-bb9444da5066)
@@ -35,9 +36,12 @@ The journey from the original SRCNN to the advanced FSRCNN involved several sign
     - Despite adding five more layers, the total number of parameters was reduced from 59,976 to 17,088, accelerating the process by about 30 times.
 3. **Optimization with Smaller Filter Sizes and Fewer Filters**
     - The final enhancement involved applying smaller filter sizes and reducing the number of filters, which drastically cut down unnecessary parameters by approximately 41.3 times faster while slightly improving the PSNR by about 0.05 dB.
+  
+## ⚙️ Conclusion
+![FSRCNN_결과이미지](https://github.com/user-attachments/assets/15af712e-7395-4eb2-9d6c-debadaff61ff)
+These improvements underscore FSRCNN’s capabilities in providing high-quality super-resolution images more efficiently than its predecessors. The strategic changes in the network architecture not only enhanced the speed but also the overall image quality, setting new standards in the field of super-resolution technology.
 
-
-## References
+## 🌐 References
 
 - **Accelerating the Super-Resolution Convolutional Neural Network** by Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang. This paper introduces the FSRCNN model, which enhances the speed and performance of super-resolution convolutional neural networks. The model is particularly noted for its efficiency and ability to perform real-time upscaling of low-resolution images.
   - [Read the full paper here](https://arxiv.org/pdf/1608.00367)
