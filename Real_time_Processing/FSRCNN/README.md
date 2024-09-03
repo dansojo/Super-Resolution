@@ -50,4 +50,4 @@ The journey from the original SRCNN to the advanced FSRCNN involved several sign
 1. - **Accelerating the Super-Resolution Convolutional Neural Network** by Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang. This paper introduces the FSRCNN model, which enhances the speed and performance of super-resolution convolutional neural networks. The model is particularly noted for its efficiency and ability to perform real-time upscaling of low-resolution images.
     - [Read the full paper here](https://arxiv.org/pdf/1608.00367)
 2. **Explore the complete repository here:** [Access the GitHub Repository](https://github.com/vdumoulin/conv_arithmetic)
-3. **For a comprehensive overview of super-resolution techniques, see the detailed post at:** [Super-Resolution Explained](https://yunmorning.tistory.com/62)
+3. **Referenced Blog:** [Fast Super-Resolution Explained](https://yunmorning.tistory.com/62)
