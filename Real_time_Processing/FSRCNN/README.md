@@ -43,9 +43,11 @@ The journey from the original SRCNN to the advanced FSRCNN involved several sign
   
 ## ⚙️ Conclusion
 ![FSRCNN_성능 비교2](https://github.com/user-attachments/assets/ee9cd556-6bec-4230-92d9-5313eea32c18)
-These improvements underscore FSRCNN’s capabilities in providing high-quality super-resolution images more efficiently than its predecessors. The strategic changes in the network architecture not only enhanced the speed but also the overall image quality, setting new standards in the field of super-resolution technology.
+**These improvements underscore FSRCNN’s capabilities in providing high-quality super-resolution images more efficiently than its predecessors. The strategic changes in the network architecture not only enhanced the speed but also the overall image quality, setting new standards in the field of super-resolution technology**.
 
 ## 🌐 References
 
-- **Accelerating the Super-Resolution Convolutional Neural Network** by Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang. This paper introduces the FSRCNN model, which enhances the speed and performance of super-resolution convolutional neural networks. The model is particularly noted for its efficiency and ability to perform real-time upscaling of low-resolution images.
+1. - **Accelerating the Super-Resolution Convolutional Neural Network** by Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang. This paper introduces the FSRCNN model, which enhances the speed and performance of super-resolution convolutional neural networks. The model is particularly noted for its efficiency and ability to perform real-time upscaling of low-resolution images.
   - [Read the full paper here](https://arxiv.org/pdf/1608.00367)
+2. **Explore the complete repository here:** [Access the GitHub Repository](https://github.com/vdumoulin/conv_arithmetic)
+3. **For a comprehensive overview of super-resolution techniques, see the detailed post at:** [Super-Resolution Explained](https://yunmorning.tistory.com/62)
