@@ -7,6 +7,8 @@ The Fast Super-Resolution Convolutional Neural Network (FSRCNN) is designed to e
 2. **Image Quality**: FSRCNN also improves the quality of the upsampled images. It introduces a deeper architecture with more layers that are specifically tuned to handle various scales of upscaling. This allows for better handling of edges and textures, resulting in sharper and more detailed images. Quantitatively, FSRCNN has demonstrated improvements in PSNR (Peak Signal-to-Noise Ratio) by approximately 0.5 to 1 dB compared to SRCNN, depending on the dataset and upscaling factor.
 3.  **Flexibility**: Unlike SRCNN, which typically requires a fixed input size, FSRCNN is capable of handling different input sizes without the need to modify the network architecture. This flexibility makes it easier to integrate into existing systems without the need for extensive reconfiguration.
 
+These enhancements make FSRCNN a superior choice for applications requiring high-quality image super-resolution in real-time scenarios. Its ability to deliver high-resolution images with lower computational cost and higher quality effectively addresses the limitations found in earlier models like SRCNN
+
 
 ## 🌟 Model Architecture
 ![FSRCNN_구조](https://github.com/user-attachments/assets/2f0f9107-4eb4-443a-accf-f34e7d648129)
@@ -20,6 +22,14 @@ FSRCNN features an innovative architecture with several key layers designed to o
 
 ## ❓ What is Super Resolution?
 Super Resolution (SR) refers to the process of improving the resolution of an image from a lower resolution to a higher resolution. The core idea is to reconstruct the high-resolution details from a low-resolution image using advanced machine learning algorithms.
+
+## 🛠️ Evolution and Performance Improvements in FSRCNN
+![FSRCNN_성능 비교](https://github.com/user-attachments/assets/338e8915-78df-4df3-8e97-bb9444da5066)
+### Technical Enhancements and Their Impacts
+The journey from the original SRCNN to the advanced FSRCNN involved several significant enhancements, each contributing to better performance and efficiency.
+1. **Introduction of Deconvolution Layer in SRCNN**
+    - By replacing the last layer of SRCNN with a deconvolution layer, the inference time was reduced by     approximately 8.7x.
+    - Additionally, this modification led to an increase in the PSNR value by 0.12 dB, surpassing the performance of a single bicubic kernel.
 
 ## References
 
