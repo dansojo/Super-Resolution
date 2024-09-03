@@ -30,6 +30,12 @@ The journey from the original SRCNN to the advanced FSRCNN involved several sign
 1. **Introduction of Deconvolution Layer in SRCNN**
     - By replacing the last layer of SRCNN with a deconvolution layer, the inference time was reduced by     approximately 8.7x.
     - Additionally, this modification led to an increase in the PSNR value by 0.12 dB, surpassing the performance of a single bicubic kernel.
+2. **Reconfiguration of Mapping Layers**
+    - The mapping layer configuration was significantly altered by introducing a shrinking layer, four mapping layers, and an expanding layer.
+    - Despite adding five more layers, the total number of parameters was reduced from 59,976 to 17,088, accelerating the process by about 30 times.
+3. **Optimization with Smaller Filter Sizes and Fewer Filters**
+    - The final enhancement involved applying smaller filter sizes and reducing the number of filters, which drastically cut down unnecessary parameters by approximately 41.3 times faster while slightly improving the PSNR by about 0.05 dB.
+
 
 ## References
 
