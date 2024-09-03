@@ -1,14 +1,11 @@
 # Fast Super-Resolution Convolutional Neural Network (FSRCNN) Overview
-
 ## Introduction
 The Fast Super-Resolution Convolutional Neural Network (FSRCNN) is designed to enhance the resolution of images in real-time. It improves upon traditional super-resolution techniques by providing a faster and more efficient method to upscale low-resolution images while maintaining high quality.
 
-## 📚 Table of Contents
-- [Project Overview](#project-overview)
-- [What is Super Resolution?](#what-is-super-resolution)
-- [Technical Background](#technical-background)
-- [Advanced Topics](#advanced-topics)
-- [Challenges and Future Directions](#challenges-and-future-directions)
+## 📚 Key Improvements Over SRCNN:
+1. **Speed**: FSRCNN is designed to be faster than SRCNN, making it more suitable for real-time applications. It achieves this by using a more efficient architecture that includes a smaller filter size in the first layer and a reduced number of feature maps. Specifically, FSRCNN can process images up to 40 times faster than SRCNN, making it highly practical for use in video streaming and real-time gaming environments.
+2. **Image Quality**: FSRCNN also improves the quality of the upsampled images. It introduces a deeper architecture with more layers that are specifically tuned to handle various scales of upscaling. This allows for better handling of edges and textures, resulting in sharper and more detailed images. Quantitatively, FSRCNN has demonstrated improvements in PSNR (Peak Signal-to-Noise Ratio) by approximately 0.5 to 1 dB compared to SRCNN, depending on the dataset and upscaling factor.
+3.  **Flexibility**: Unlike SRCNN, which typically requires a fixed input size, FSRCNN is capable of handling different input sizes without the need to modify the network architecture. This flexibility makes it easier to integrate into existing systems without the need for extensive reconfiguration.
 
 
 ## 🌟 Model Architecture
