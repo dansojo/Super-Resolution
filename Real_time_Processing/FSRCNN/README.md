@@ -10,9 +10,10 @@ The Fast Super-Resolution Convolutional Neural Network (FSRCNN) is designed to e
 - [Advanced Topics](#advanced-topics)
 - [Challenges and Future Directions](#challenges-and-future-directions)
 
-![FSRCNN_구조](https://github.com/user-attachments/assets/2f0f9107-4eb4-443a-accf-f34e7d648129)
 
 ## 🌟 Model Architecture
+![FSRCNN_구조](https://github.com/user-attachments/assets/2f0f9107-4eb4-443a-accf-f34e7d648129)
+
 FSRCNN features an innovative architecture with several key layers designed to optimize performance:
 1. **Feature Extraction Layer**: Utilizes small convolutional filters to capture primary features from low-resolution images.
 2. **Shrinking Layer**: Reduces dimensionality to decrease computational complexity.
