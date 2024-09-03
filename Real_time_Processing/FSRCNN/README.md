@@ -24,4 +24,4 @@ Super Resolution (SR) refers to the process of improving the resolution of an im
 ## References
 
 - **Accelerating the Super-Resolution Convolutional Neural Network** by Chao Dong, Chen Change Loy, Kaiming He, Xiaoou Tang. This paper introduces the FSRCNN model, which enhances the speed and performance of super-resolution convolutional neural networks. The model is particularly noted for its efficiency and ability to perform real-time upscaling of low-resolution images.
-  - [Read the full paper here](https://www.ecva.net/papers/eccv_2016/papers_ECCV/html/6241_ECCV_2016_paper.php)
+  - [Read the full paper here](https://arxiv.org/pdf/1608.00367)
