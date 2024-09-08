@@ -16,9 +16,18 @@ ESPCN introduces critical advancements over traditional methods such as SRCNN, m
 ![espcn_model](https://github.com/user-attachments/assets/7b63d4f7-9015-4988-848d-4f43385ee492)
 
 ESPCN's architecture is designed to maximize efficiency while maintaining or enhancing image quality. The model consists of several key components:
-1. **Feature Extraction Layer**: Small convolutional filters efficiently capture the primary features from low-resolution inputs.
-2. **Non-linear Mapping Layer**: Multiple layers transform the extracted features, preparing them for the upscaling process.
-3. **Sub-pixel Convolution Layer**: This innovative layer rearranges the feature maps to produce a high-resolution output directly, bypassing traditional upscaling methods.
+1. **Feature Extraction Layer**:
+   - **Purpose**: This layer's primary function is to extract salient features from the low-resolution input image. These features are crucial for reconstructing the high-resolution output.
+   - **Implementation**: It uses small convolutional filters (typically 5x5 or smaller), which are optimal for capturing essential details without the overhead of larger filters. This size allows the network to focus on important textural and edge details necessary for effective upscaling.
+   - **Benefits**: Smaller filters reduce the computational cost and allow the network to operate efficiently, making it suitable for real-time applications.
+2. **Non-linear Mapping Layer**:
+   - **Purpose**: After feature extraction, this layer transforms the initial features into a richer feature set that represents more complex textures and details. This transformation is crucial for reconstructing high-quality images from low-resolution inputs.
+   - **Implementation**: Consists of several convolutional layers that apply non-linear transformations to the extracted features. This layer deepens the network, enabling it to learn complex patterns and dependencies within the data.
+   - **Benefits**: The non-linear processing helps in restoring finer details and textures that are often lost in lower-resolution images. It makes the upscaling process more effective by enhancing the depth and complexity of the feature maps.
+3. **Sub-pixel Convolution Layer**:
+    - **Purpose**:  The core innovation of ESPCN, this layer directly upscales the low-resolution feature maps to a high-resolution output. It bypasses the need for any intermediate bilinear or bicubic upscaling methods.
+   - **Implementation**: Utilizes a technique known as 'pixel shuffling' where the filters in this layer rearrange the output from the previous layers into a higher resolution format. Each filter output is directed to a specific location in the output image, effectively increasing the image resolution.
+   - **Benefits**: Directly producing a high-resolution output from low-resolution inputs significantly reduces computational overhead. This method not only speeds up the process but also improves the quality of the output by avoiding the blurring effects typical of interpolation-based upscaling.
 
 ## 🔄 Activation Function Comparison: ReLU vs Tanh
 ![summary_activation_fn](https://github.com/user-attachments/assets/6fc4a722-2275-4e29-8a62-9c9cbe6d9a73)
