@@ -1,5 +1,6 @@
-# Fast Super-Resolution Convolutional Neural Network (FSRCNN) Overview
-  - [Read the full paper here](https://arxiv.org/pdf/1608.00367)
+# Efficient Sub-Pixel Convolutional Neural Network (ESPCN) Overview
+Welcome to the Efficient Sub-Pixel Convolutional Neural Network (ESPCN) project repository. This repository offers an in-depth guide to understanding and implementing ESPCN for super-resolution tasks that not only enhance image quality but also operate efficiently enough for real-time applications.
+  - [Read the full paper here](https://arxiv.org/pdf/1609.05158)
 
 ## Introduction
 The Fast Super-Resolution Convolutional Neural Network (FSRCNN) is designed to enhance the resolution of images in real-time. It improves upon traditional super-resolution techniques by providing a faster and more efficient method to upscale low-resolution images while maintaining high quality.
