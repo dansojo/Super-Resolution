@@ -15,7 +15,7 @@ These enhancements make FSRCNN a superior choice for applications requiring high
 
 
 ## 🌟 Model Architecture
-![FSRCNN_구조](https://github.com/user-attachments/assets/2f0f9107-4eb4-443a-accf-f34e7d648129)
+![espcn_model](https://github.com/user-attachments/assets/7b63d4f7-9015-4988-848d-4f43385ee492)
 
 ESPCN's architecture is designed to maximize efficiency while maintaining or enhancing image quality. The model consists of several key components:
 1. **Feature Extraction Layer**: Small convolutional filters efficiently capture the primary features from low-resolution inputs.
@@ -23,6 +23,7 @@ ESPCN's architecture is designed to maximize efficiency while maintaining or enh
 3. **Sub-pixel Convolution Layer**: This innovative layer rearranges the feature maps to produce a high-resolution output directly, bypassing traditional upscaling methods.
 
 ## 🔄 Activation Function Comparison: ReLU vs Tanh
+
 In the development of ESPCN, a key focus was on selecting the most effective activation function to maximize both performance and accuracy in image super-resolution. During our extensive testing, it became evident that different activation functions have significant impacts on the final image quality and model efficiency.
 ### ReLU Activation Function
   - Initially, the ESPCN model employed the ReLU (Rectified Linear Unit) activation function for its layers. ReLU is widely used due to its simplicity and ability to reduce the likelihood of the vanishing gradient problem, especially in deep networks. While ReLU helped in faster convergence during training, it was not without drawbacks:
@@ -33,30 +34,35 @@ In the development of ESPCN, a key focus was on selecting the most effective act
   - Given the challenges observed with ReLU, experiments were also conducted using the Tanh (hyperbolic tangent) activation function. Tanh maps the input values to a range between -1 and 1, providing a normalized output that helps maintain image details across a broader dynamic range. Here’s what was observed:
     - **Improved Image Quality**: The use of Tanh resulted in smoother and more natural image textures. This was particularly noticeable in areas where subtle details are crucial, such as facial features in portraits or intricate textures in natural scenes.
     - **Consistency in Performance**: Tanh consistently offered better Peak Signal-to-Noise Ratio (PSNR) improvements compared to ReLU. For example, when applied to the same dataset, models using Tanh outperformed those using ReLU by approximately 0.2 to 0.5 dB, depending on the image content and upscaling factor.
+![espcn_relu review](https://github.com/user-attachments/assets/09a144ce-55e1-4f22-bdcd-6f38e75538a0)
 ### Conclusion
 The comparative analysis between ReLU and Tanh in the ESPCN model highlighted the importance of choosing an activation function that aligns closely with the specific requirements of the task. For the purpose of super-resolution, where detail preservation and smooth scaling are paramount, Tanh proved to be more advantageous, leading to its adoption in the final ESPCN model setup. This decision is supported by both quantitative metrics and qualitative assessments of the super-resolved images.
 
-## 🛠️ Evolution and Performance Improvements in FSRCNN
+## 🛠️ 📈 Comparative Analysis and Results
+ESPCN demonstrates remarkable improvements over conventional super-resolution methods:
+![espcn_sota_VS](https://github.com/user-attachments/assets/482368ae-35be-4569-83f0-98029ee50529)
+  - **Benchmark Performance**: On standard datasets like Set5 and Set14, ESPCN consistently outperforms earlier models like SRCNN in terms of PSNR and visual clarity.
+  - **Real-World Application**: The model excels in upscaling real-time video content, making it highly suitable for enhanced streaming quality.
 
-### Technical Enhancements and Their Impacts
-The journey from the original SRCNN to the advanced FSRCNN involved several significant enhancements, each contributing to better performance and efficiency.
-1. **Introduction of Deconvolution Layer in SRCNN**
-    - By replacing the last layer of SRCNN with a deconvolution layer, the inference time was reduced by     approximately 8.7x.
-    - Additionally, this modification led to an increase in the PSNR value by 0.12 dB, surpassing the performance of a single bicubic kernel.
-2. **Reconfiguration of Mapping Layers**
-    - The mapping layer configuration was significantly altered by introducing a shrinking layer, four mapping layers, and an expanding layer.
-    - Despite adding five more layers, the total number of parameters was reduced from 59,976 to 17,088, accelerating the process by about 30 times.
-3. **Optimization with Smaller Filter Sizes and Fewer Filters**
-    - The final enhancement involved applying smaller filter sizes and reducing the number of filters, which drastically cut down unnecessary parameters by approximately 41.3 times faster while slightly improving the PSNR by about 0.05 dB.
 
 ## Super-Resolution Results Across Different Models
-![FSRCNN_결과이미지](https://github.com/user-attachments/assets/0f58683c-7f05-4a27-aee5-baf65689a4b8)
+![espcn_visualization_VS](https://github.com/user-attachments/assets/07e0a4a8-5471-4844-b19c-b461f4ca094d)
    -Below are the results of applying different super-resolution models to the same input image. Each model's output is shown to highlight the differences in image quality and detail enhancement.
+
+## ⏱️ Run-Time Performance
+ESPCN's run-time performance is exemplary, making it a top choice for applications requiring immediate image processing, such as video streaming and real-time gaming. The model's streamlined architecture allows for rapid image upscaling without compromising qualit
+  ## Run-Time Benchmark
+  Our tests have shown that ESPCN significantly outpaces traditional super-resolution         models in terms of speed. The graph below demonstrates how ESPCN compares to other       
+  models,   emphasizing its superior performance in real-time scenarios.
+![espcn_run time](https://github.com/user-attachments/assets/753b530e-a444-4625-899e-ce8b2162bd99)
+
 
   
 ## ⚙️ Conclusion
-![FSRCNN_성능 비교2](https://github.com/user-attachments/assets/ee9cd556-6bec-4230-92d9-5313eea32c18)
-**These improvements underscore FSRCNN’s capabilities in providing high-quality super-resolution images more efficiently than its predecessors. The strategic changes in the network architecture not only enhanced the speed but also the overall image quality, setting new standards in the field of super-resolution technology**.
+
+**ESPCN sets a new benchmark in super-resolution technology, combining high-quality output with unprecedented processing speeds. Its efficiency makes it an indispensable tool for enhancing video and game graphics in real time.**
+
+**This streamlined approach keeps the content concise and focused on providing unique information in each section, ensuring clarity and preventing repetition**.
 
 ## 🌐 References
 
