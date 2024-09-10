@@ -2,7 +2,7 @@
   - 제목: Image Super-Resolution Using Very Deep Residual Channel Attention Networks
   - 저자: Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, Yun Fu
   - 출판 연도 및 학회: ECCV 2018
-  - 논문 링크: 
+  - 논문 링크: [Read the full paper here](https://openaccess.thecvf.com/content_ECCV_2018/papers/Yulun_Zhang_Image_Super-Resolution_Using_ECCV_2018_paper.pdf)
 
 ## 2. 주요 개념
 
