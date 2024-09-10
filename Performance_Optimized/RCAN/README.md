@@ -1,8 +1,8 @@
 ## 1. 논문 정보
-제목: Image Super-Resolution Using Very Deep Residual Channel Attention Networks
-저자: Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, Yun Fu
-출판 연도 및 학회: ECCV 2018
-논문 링크: 
+  -제목: Image Super-Resolution Using Very Deep Residual Channel Attention Networks
+  -저자: Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, Yun Fu
+  -출판 연도 및 학회: ECCV 2018
+  -논문 링크: 
 
 ## 2. 주요 개념
 RCAN 모델의 주요 개념들을 더 깊이 이해하고 정의해보겠습니다.
